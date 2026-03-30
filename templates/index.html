@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:https="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta charset="utf-8">
+    <title>Windows account creation</title>
+    <link rel="stylesheet" href="static/css/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="https://vega76.cz" property="og:url" />
+    <meta content="https://vega76.cz/static/img/oldbuilding" property="og:image" />
+    <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+    </head>
+    <body class="black_bg">
+        <section class="main">
+            <div class="main-inner grid">
+                <div class="main-info">
+                    <span class="main-info__title">Windows</span>
+
+                    {% if logged_in %}
+                    <div class="button-container">
+                        <span class="main-info__subtitle">Hi {{username}}</span>
+                    </div>
+
+                    {% if account_created %}
+                    <div class="button-container">
+                         <a href="/reset">
+                             <button class="main_button git_button">
+                                 reset
+                             </button>
+                         </a>
+                        <span class="main-info__subtitle">- click here to reset the password</span>
+                    </div>
+                    {% else %}
+                    <div class="button-container">
+                         <a href="/create">
+                             <button class="main_button git_button">
+                                 create
+                             </button>
+                         </a>
+                        <span class="main-info__subtitle">- click here to create a windows account</span>
+                    </div>
+                    {% endif %}
+                    {% else %}
+                    <div class="button-container">
+                        <a href="/login">
+                            <button class="main_button git_button">
+                                Login
+                            </button>
+                        </a>
+                        <span class="main-info__subtitle">- Login with memberportal to create a windows account</span>
+                    </div>
+                    {% endif %}
+
+                    <div class="button-container">
+                        <a href="https://wiki.base48.cz/wiki/Windows_VM">
+                            <button class="main_button git_button">
+                                Documentation
+                            </button>
+                        </a>
+                        <span class="main-info__subtitle">- How to use this</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </body>
+</html>

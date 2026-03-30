@@ -1,0 +1,78 @@
+@media screen and (max-width: 500px){
+    .main-info__title{
+        text-transform: capitalize;
+        font-size: 1000%;
+        margin: 10px;
+        font-weight: bolder;
+    }
+    .main-info__subtitle {
+        display: none;
+    }
+    .navigation__link{
+        display: none;
+    }
+    .main_button{
+        margin: 20px 5px 10px;
+        width: 95%;
+    }
+    .git_button {
+        margin: 20px 5px 10px;
+    }
+    .main-info {
+        width: 99%;
+        text-align: center; /* Align all content inside container to left */
+        justify-content: center;
+
+    }
+
+    .header-inner{
+        justify-content: normal;
+    }
+    .nav_button{
+        display: initial;
+    }
+    .points{
+        display: block;
+
+    }
+    .points__inner{
+        display: block;
+        padding-top: 10px;
+    }
+    .button-container {
+        text-align: center; /* Align all content inside container to left */
+        /*align-items: left;*/
+        justify-content: center;
+
+    }
+    .point__subtitle{
+        font-size: 20px;
+    }
+    .grid{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .grid-view{
+        display: none;
+    }
+    .point__title {
+        font-size: 30px;
+    }
+    .point {
+        width: 90%;
+    }
+    .description__title {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 520px){
+    .screenshot {
+        display: none;
+    }
+    .r{
+        text-align: center;
+    }
+    .l{
+        text-align: center;
+    }
+}
