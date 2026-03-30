@@ -1,0 +1,11 @@
+[Unit]
+Description=gunicorn daemon
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root
+ExecStart=/root/run.sh
+
+[Install]
+WantedBy=multi-user.target
